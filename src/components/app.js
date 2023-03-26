@@ -1,24 +1,21 @@
 import React from "react";
-import '../styles/App.css';
+import PropTypes from "prop-types";
+import "../styles/App.css";
+import LocationDetails from "./LocationDetails";
 
-function App() {
+function App({ location }) {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LocationDetails {...location} />
     </div>
   );
 }
+
+App.propTypes = {
+  location: PropTypes.shape({
+    city: PropTypes.string.isRequired,
+    country: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default App;

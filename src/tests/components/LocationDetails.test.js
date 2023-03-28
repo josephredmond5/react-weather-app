@@ -13,3 +13,4 @@ describe("LocationDetails", () => {
   });
 
   export default LocationDetails;
+

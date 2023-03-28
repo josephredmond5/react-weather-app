@@ -10,4 +10,3 @@ describe("App", () => {
   });
 });
 
-// READ THIS AND THN TAKE NOTES ON IT

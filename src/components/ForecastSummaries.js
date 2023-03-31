@@ -1,21 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
+import ForecastSummary from "./ForecastSummary";
 
-function ForecastSummaries(props) {
-  const { forecasts } = props;
-
+function ForecastSummaries({ forecasts }) {
   return (
     <div className="forecast-summaries">
       {forecasts.map((forecast) => (
-        <div key={forecast.date} className="forecast-summary">
-          <div className="forecast-summary__date">{forecast.date}</div>
-          <div className="forecast-summary__temperature">
-            {forecast.temperature.max}&deg;C
-          </div>
-          <div className="forecast-summary__description">
-            {forecast.description}
-          </div>
-        </div>
+        <ForecastSummary
+          key={forecast.date}
+          date={forecast.date}
+          description={forecast.description}
+          icon={forecast.icon}
+          temperature={forecast.temperature}
+        />
       ))}
     </div>
   );

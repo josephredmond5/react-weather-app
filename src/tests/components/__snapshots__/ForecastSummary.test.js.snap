@@ -14,7 +14,10 @@ exports[`ForecastSummary renders correctly 1`] = `
       class="forecast-summary__icon"
       data-testid="forecast-icon"
     >
-      stubIcon
+      <img
+        alt="Stub description"
+        src="stubIcon"
+      />
     </div>
     <div
       class="forecast-summary__temperature"

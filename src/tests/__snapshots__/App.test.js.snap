@@ -2,22 +2,23 @@
 
 exports[`ForecastSummaries renders correctly 1`] = `
 <DocumentFragment>
-  <div
-    class="forecast-summaries"
-  >
+  <div>
     <div
       class="forecast-summary"
     >
       <div
         class="forecast-summary__date"
       >
-        1111111
+        2022-04-04
       </div>
       <div
         class="forecast-summary__icon"
         data-testid="forecast-icon"
       >
-        stubIcon1
+        <img
+          alt="Stub description 1"
+          src="stubIcon1"
+        />
       </div>
       <div
         class="forecast-summary__temperature"
@@ -36,13 +37,16 @@ exports[`ForecastSummaries renders correctly 1`] = `
       <div
         class="forecast-summary__date"
       >
-        2222222
+        2022-04-05
       </div>
       <div
         class="forecast-summary__icon"
         data-testid="forecast-icon"
       >
-        stubIcon2
+        <img
+          alt="Stub description 2"
+          src="stubIcon2"
+        />
       </div>
       <div
         class="forecast-summary__temperature"
@@ -52,7 +56,7 @@ exports[`ForecastSummaries renders correctly 1`] = `
       <div
         class="forecast-summary__description"
       >
-        Stub description2
+        Stub description 2
       </div>
     </div>
   </div>

@@ -4,15 +4,9 @@ import ForecastSummary from "./ForecastSummary";
 
 function ForecastSummaries({ forecasts }) {
   return (
-    <div className="forecast-summaries">
+    <div>
       {forecasts.map((forecast) => (
-        <ForecastSummary
-          key={forecast.date}
-          date={forecast.date}
-          description={forecast.description}
-          icon={forecast.icon}
-          temperature={forecast.temperature}
-        />
+        <ForecastSummary key={forecast.date} {...forecast} />
       ))}
     </div>
   );
@@ -21,12 +15,12 @@ function ForecastSummaries({ forecasts }) {
 ForecastSummaries.propTypes = {
   forecasts: PropTypes.arrayOf(
     PropTypes.shape({
-      date: PropTypes.number.isRequired,
+      date: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      icon: PropTypes.number.isRequired,
+      icon: PropTypes.string.isRequired,
       temperature: PropTypes.shape({
-        max: PropTypes.number.isRequired,
-        min: PropTypes.number.isRequired,
+        max: PropTypes.number,
+        min: PropTypes.number,
       }).isRequired,
     })
   ).isRequired,

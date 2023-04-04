@@ -1,63 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ForecastSummaries renders correctly 1`] = `
+exports[`ForecastSummary renders correctly 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="forecast-summary"
+  >
     <div
-      class="forecast-summary"
+      class="forecast-summary__date"
     >
-      <div
-        class="forecast-summary__date"
-      >
-        2022-04-04
-      </div>
-      <div
-        class="forecast-summary__icon"
-        data-testid="forecast-icon"
-      >
-        <img
-          alt="Stub description 1"
-          src="stubIcon1"
-        />
-      </div>
-      <div
-        class="forecast-summary__temperature"
-      >
-        22°C
-      </div>
-      <div
-        class="forecast-summary__description"
-      >
-        Stub description 1
-      </div>
+      2022-04-04
     </div>
     <div
-      class="forecast-summary"
+      class="forecast-summary__icon"
+      data-testid="forecast-icon"
     >
-      <div
-        class="forecast-summary__date"
-      >
-        2022-04-05
-      </div>
-      <div
-        class="forecast-summary__icon"
-        data-testid="forecast-icon"
-      >
-        <img
-          alt="Stub description 2"
-          src="stubIcon2"
-        />
-      </div>
-      <div
-        class="forecast-summary__temperature"
-      >
-        24°C
-      </div>
-      <div
-        class="forecast-summary__description"
-      >
-        Stub description 2
-      </div>
+      <img
+        alt="Stub description"
+        src="stubIcon"
+      />
+    </div>
+    <div
+      class="forecast-summary__temperature"
+    >
+      22°C
+    </div>
+    <div
+      class="forecast-summary__description"
+    >
+      Stub description
     </div>
   </div>
 </DocumentFragment>

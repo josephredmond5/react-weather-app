@@ -7,6 +7,7 @@ function ForecastSummary({ date, temperature, description, icon }) {
   return (
     <div className="forecast-summary">
       <div className="forecast-summary__date">{date}</div>
+
       <div className="forecast-summary__icon" data-testid="forecast-icon">
         <img src={icon} alt={description} />
       </div>

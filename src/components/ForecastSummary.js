@@ -23,6 +23,10 @@ ForecastSummary.propTypes = {
   date: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
+  temperature: PropTypes.shape({
+    max: PropTypes.number.isRequired,
+    min: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default ForecastSummary;

@@ -1,3 +1,7 @@
+.weather-app {
+  margin: 0 20px;
+}
+
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -13,7 +17,7 @@
 }
 
 body {
-  background-color: greenyellow;
+  background-color: #a9f7a8;
 }
 
 /* ADD GOOGLE FONT */

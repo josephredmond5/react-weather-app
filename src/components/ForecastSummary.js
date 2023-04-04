@@ -1,15 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import iconData from "../data/iconData.json";
 
 function ForecastSummary({ date, temperature, description, weatherCode }) {
   const degreeSymbol = "\u00B0";
-
-  const getIconUrl = (code) => {
-    const prefix = code.toString().slice(0, 2);
-    const icon = iconData[prefix][0].icon;
-    return `https://openweathermap.org/img/wn/${icon}.png`;
-  };
 
   return (
     <div className="forecast-summary">
